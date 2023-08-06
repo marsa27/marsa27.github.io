@@ -1,103 +1,201 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Peta Pembelajaran Network Engineer</title>
+    <title>Portofolio marsa27</title>
     <style>
+        /* CSS dasar untuk membuat tampilan halaman lebih menarik */
         body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            background-color: #f5f5f5;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            margin: 0;
+            padding: 0;
         }
 
-        h1 {
-            text-align: center;
-            color: #333;
-            padding: 20px 0;
+        nav {
+            position: fixed;
+            display: flex;
+            justify-content: center;
+            background-color: #1a1b52;
+            padding: 10px;
+            top: 0;
+            left: 0;
+            width: 100%;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
         }
 
         .container {
-            max-width: 900px;
+            max-width: 800px;
             margin: 0 auto;
             padding: 20px;
-            background-color: #fff;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
 
-        table {
-            width: 100%;
-            border-collapse: collapse;
+        .profile-image {
+            max-width: 200px;
+            border-radius: 50%;
+            display: block;
+            margin: 0 auto;
+            margin-top: 20px;
             margin-bottom: 20px;
         }
 
-        th, td {
-            border: 1px solid #ccc;
-            padding: 12px;
-            text-align: left;
-        }
-
-        th {
-            background-color: #f2f2f2;
+        .profile-name {
+            font-size: 32px;
             font-weight: bold;
+            text-align: center;
         }
 
-        @media screen and (max-width: 768px) {
+        .profile-title {
+            font-size: 20px;
+            color: #3a3535;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .profile-description {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 30px;
+            padding-left: 100px;
+            padding-right: 100px;
+            text-align: center;
+        }
+
+        hr {
+            margin: 100px auto; /* Atur margin agar garis pemisah berada di tengah halaman */
+            width: 50%; /* Atur lebar garis pemisah sesuai kebutuhan */
+            border: 1px solid #1a1b52; /* Warna dan style garis pemisah */
+        }
+
+        .portfolio {
+            display: left;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            justify-items: center;
+        }
+
+        .portfolio-item {
+            width: 100%;
+            max-width: 300px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .portfolio-item img {
+            width: 200%;
+            height: 300px;
+            object-fit: cover;
+        }
+
+        .portfolio-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .description {
+            margin-top: 10px;
+        }
+
+        .iframe-item {
+            margin: 20px 0; /* Atur jarak atas dan bawah antara iframe */
+            border: 1px solid #1a1b52;
+        }
+
+        .contact {
+            text-align: center;
+            margin-top: 0;
+            margin-right: 0;
+        }
+
+        .contact i {
+            text-align: center;
+            font-size: 24px;
+            margin: 0 10px;
+            color: #1a1b52;
+        }
+
+        @media only screen and (max-width: 600px) {
             .container {
                 padding: 10px;
-            }
-
-            h1 {
-                font-size: 24px;
-            }
-
-            th, td {
-                font-size: 14px;
-                padding: 8px;
             }
         }
     </style>
 </head>
-
 <body>
-    <h1>Peta Pembelajaran untuk Menjadi Network Engineer yang Handal</h1>
-    <div class="container">
-        <table>
-            <tr>
-                <th>Topik</th>
-                <th>Subtopik</th>
-            </tr>
-            <tr>
-                <td rowspan="4">1. Dasar Jaringan</td>
-                <td>Protokol TCP/IP</td>
-            </tr>
-            <tr>
-                <td>Subnetting</td>
-            </tr>
-            <tr>
-                <td>Routing dan Switching</td>
-            </tr>
-            <tr>
-                <td>Model OSI dan TCP/IP</td>
-            </tr>
-            <tr>
-                <td rowspan="4">2. Sertifikasi Jaringan</td>
-                <td>Cisco CCNA</td>
-            </tr>
-            <tr>
-                <td>Juniper JNCIA</td>
-            </tr>
-            <tr>
-                <td>Validasi Pengetahuan</td>
-            </tr>
-            <tr>
-                <td>Meningkatkan Kredibilitas</td>
-            </tr>
-            <!-- Tambahkan baris lain untuk bagian lain dari peta pembelajaran -->
-        </table>
-    </div>
-</body>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#sertifikasi">Sertifikasi</a>
+        <a href="#contact">Contact</a>
+    </nav>
 
+    <div class="container">
+        <!-- Konten halaman web Anda -->
+    </div>
+
+    <div class="profile-image-container">
+        <img src="marsa.jpg" alt="Profil Saya" class="profile-image">
+    </div>
+        <div class="profile-name">I'm Vhindu Marsa</div>
+        <div class="profile-title">Pelajar di SMKN 7 (STM Pembangunan) Semarang</div>
+        <div class="profile-description">
+            Selamat datang di portofolio saya! Saya adalah seorang Pelajar SMK dan di sini saya menampilkan beberapa karya dan proyek yang pernah saya selesaikan.
+        </div>
+
+        <hr> <!-- Tambahkan garis pemisah di tengah web -->
+
+            <div class="container">
+        <h2 id="home">Selamat Datang di Portofolio Saya</h2>
+        <p>Ini adalah halaman portofolio saya. Jangan ragu untuk menghubungi saya jika Anda tertarik untuk bekerja sama.</p>
+        
+        <br><h2 id="about">Tentang Saya</h2> <!-- Tambahkan id "about" pada bagian "About" -->
+        <p>Hai!
+        <br>Namaku Vhindu Marsa Susilo, banyak orang mengira aku seorang Hindu
+        <br> Next....
+        <br>Saya adalah seorang pelajar yang sadang mendalami bidang networking dan saat ini mulai mencantai dunia kode.</p>
+        
+        <br><h2 id="projects">Projek Saya</h2>
+        <p>Saya bingung projek digital saya yang bagus untuk dipajang sepertinya belum ada.</p>
+
+        <br><h2 id="sertifikasi"> Sertifikasi</h2>
+        <div class="sertfikasi">
+            <div class="portfolio-item">
+                    <div class="iframe-item">
+                <iframe src="file:///C:/Users/Lenovo/Pictures/VHINDUMARSA-cisco.pdf"></iframe>
+                <div class="description">
+                    <p>Sertifikasi CISCO Academy (IT Essentials) th2022</p>
+                </div>
+            </div>
+        </div>
+        <div class="sertifikasi">
+            <div class="portfolio-item">
+                    <div class="iframe-item">
+                <iframe src="file:///C:/Users/Lenovo/Pictures/VHINDUMARSA-damc23.pdf"></iframe>
+                <div class="description">
+                    <p>Sertifikasi Intro to Data Analyst by ReveoU th2023</p>
+                </div>
+            </div>
+        </div>
+
+        <br id="contact">
+        <hr><div class="contact">
+            <a href="https://linkedin.com/in/vhindu-marsa-susilo-131475270"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/marsa27"><i class="fab fa-github"></i></a>
+            <a href="https://www.instagram.com/marsasls/"><i class="fab fa-instagram instagram-icon"></i></a>
+            <a href="https://api.whatsapp.com/send?phone=6285643615231" target="_blank"><i class="whatsapp-icon fab fa-whatsapp"></i></a>
+         </div>
+
+        <!-- Load Font Awesome icons -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+    </div>
+
+</body>
 </html>
